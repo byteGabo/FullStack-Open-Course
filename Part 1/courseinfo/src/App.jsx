@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Header from './Header'
+import Content from './Content'
+
 
 
 const App = () => {
@@ -10,12 +13,12 @@ const App = () => {
   const part3 = 'State of a component'
   const exercises3 = 14
 
- 
   return (
     <div>
       <Header course={course} />
-      <Content ... />
-      <Total ... />
+      <Content part1={part1} exercises1={exercises1}
+               part2={part2} exercises2={exercises2}
+               part3={part3} exercises3={exercises3} />
     </div>
   )
 }
